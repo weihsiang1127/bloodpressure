@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="124dp"
+        android:background="#FFEB3B"
+        app:layout_constraintBottom_toTopOf="@+id/t1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/ic_wave_bg"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="180dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/donation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v1" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="304dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="264dp"
+        android:fontFamily="@font/zkr"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="4dp"
+        android:text="歡迎使用血壓檢測"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#3D414E"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        app:layout_constraintVertical_bias="0.522">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="12dp"
+            app:cardMaxElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/screen_background_light"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/document" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/zkr"
+                    android:text="填寫紀錄"
+                    android:textColor="#6f6f6f"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="12dp"
+            app:cardMaxElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/screen_background_light"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/analysis" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/zkr"
+                    android:text="查詢紀錄"
+                    android:textColor="#6f6f6f"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="12dp"
+            app:cardMaxElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/screen_background_light"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/phone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/zkr"
+                    android:text="預約醫生"
+                    android:textColor="#6f6f6f"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
